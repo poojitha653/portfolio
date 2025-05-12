@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #9b59b6, #6e0659);
+  color: #333;
+  padding: 20px;
+  transition: background 0.5s ease;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 40px 0;
+  background: #022344;
+  color: white;
+  border-radius: 20px;
+  transition: transform 0.9s ease;
+}
+header:hover {
+  transform: scale(1.02);
+}
+header img.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  float: right;
+  margin: -30px 50px 10px -160px;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 20px 0;
+  gap: 30px;
+}
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  position: relative;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #022344;
+  left: 0;
+  bottom: -10px;
+  transition: width 0.5s;
+}
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Section Styling */
+section {
+  margin: 40px 0;
+  padding: 20px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 2); /* lighter, softer shadow */
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeIn 1s ease forwards;
+}
+
+#about, #projects, #contact {
+  background-color: #1e1e2f;
+  color: #f1f1f1;
+}
+#about h2, #projects h2, #contact h2 {
+  color: #00cec9;
+}
+
+#skills {
+  background-color: #1e1e2f;
+  color: #f1f1f1;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+#skills h2 {
+  color: #00cec9;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+#skills {
+  background-color: #1e1e2f;
+  color: #f1f1f1;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+#skills h2 {
+  color: #00cec9;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* fixed 4 cards per row */
+  gap: 20px;
+}
+
+#development-tools {
+  background-color: #1e1e2f;
+  color: #f1f1f1;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+#development-tools h2 {
+  color: #00cec9;  /* Accent color for section title */
+  margin-bottom: 30px;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.tool-card {
+  background-color: #2d2d44;
+  border-radius: 10px;
+  width: 250px;  /* Adjusted width for better fit */
+  height: 300px; /* Adjusted height to fit content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; /* Distributes content evenly */
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tool-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.tool-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.tool-card h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.tool-card p {
+  font-size: 1rem;
+  color: #dcdcdc;
+  margin-top: 10px;
+  line-height: 1.4; /* Increased line height for readability */
+}
+
+/* Specific style for the Git icon */
+.git-icon {
+  filter: brightness(0) invert(1); /* Makes the Git icon white */
+}
+
+.skill-card {
+  background: #2c2c3a;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card h3 {
+  color: #00cec9;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.skill-bar {
+  height: 10px;
+  background: #555;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.bar {
+  height: 100%;
+  background: #00cec9;
+  border-radius: 5px;
+  transition: width 0.5s ease;
+}
+
+.percent {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+
+.skills-list span {
+  background: #00cec9;
+  color: #1e1e2f;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.skills-list span:hover {
+  transform: scale(1.1);
+  background: #00b3b3;
+}
+
+/* Project Card */
+.project-card {
+  padding: 15px;
+  border: 2px solid #a29bfe;
+  border-radius: 15px;
+  margin-top: 10px;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+/* Styling for project feature list */
+/* Styling for project feature list */
+.feature-list {
+  padding-left: 20px; /* Adds space between bullet points and container */
+  margin-top: 10px; /* Adds space above the list */
+  list-style-type: disc; /* Ensures proper bullet style */
+  /* Removed background-color and border-radius */
+  /* Removed box-shadow */
+}
+
+.feature-list li {
+  margin-bottom: 10px; /* Adds spacing between each list item */
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+/* Optional: Styling for Key Features text */
+.feature-list p strong {
+  color: #00cec9; /* Accent color for Key Features text */
+  font-size: 1.2rem;
+}
+
+/* Contact Icons */
+.contact-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+.contact-icons a {
+  font-size: 2.5rem;
+  margin: 0 15px;
+  color: #f1f1f1;
+  text-decoration: none;
+  transition: transform 0.2s, color 0.3s;
+}
+.contact-icons a:hover {
+  color: #00cec9;
+  transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #001c24;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
