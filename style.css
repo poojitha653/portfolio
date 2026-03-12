@@ -360,6 +360,10 @@ section {
   box-shadow: 0 0 15px #00e6e6;
 }
 
+#resume h2 {
+  color: #00e6e6;
+  margin-bottom: 20px;
+}
 .resume-card h3 {
   color: #00e6e6;
   margin-bottom: 10px;
