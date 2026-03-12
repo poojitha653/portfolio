@@ -340,7 +340,10 @@ section {
 }
 
 #resume {
-  padding: 40px 20px;
+  background: #1b1b2f;   /* same dark background as other sections */
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 40px;
 }
 
 .resume-card {
