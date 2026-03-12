@@ -418,3 +418,40 @@ section {
 .cert-card a:hover{
     text-decoration:underline;
 }
+
+/* Mobile Responsive Design */
+
+@media (max-width: 768px) {
+
+    .cert-container{
+        width:95%;
+    }
+
+    .cert-card{
+        padding:20px;
+        margin:20px 0;
+    }
+
+    .cert-card h2{
+        font-size:20px;
+    }
+
+    .cert-card li{
+        font-size:14px;
+    }
+
+    body{
+        padding:10px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .skills-container,
+    .projects-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+}
