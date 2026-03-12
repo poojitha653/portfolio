@@ -59,3 +59,13 @@ const skillsSection = document.querySelector("#skills");
 if (skillsSection) {
   observer.observe(skillsSection);
 }
+
+function toggleCertificates() {
+    let cert = document.getElementById("python-certificates");
+
+    if (cert.style.display === "none") {
+        cert.style.display = "block";
+    } else {
+        cert.style.display = "none";
+    }
+}
