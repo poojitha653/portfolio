@@ -342,3 +342,17 @@ button {
     cursor: pointer;
     margin-top: 8px;
 }
+
+.certificates{
+    display:none;
+    margin-top:10px;
+    font-size:14px;
+}
+
+.certificates ul{
+    padding-left:15px;
+}
+
+.skill-card{
+    cursor:pointer;
+}
