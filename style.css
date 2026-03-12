@@ -376,3 +376,45 @@ section {
 .resume-card p {
   color: #d1d1d1;
 }
+
+/* Certificates Page */
+
+.cert-container{
+    width:80%;
+    margin:auto;
+    padding-top:40px;
+}
+
+.cert-card{
+    background:#1b1b2f;
+    border:2px solid #00e6e6;
+    border-radius:15px;
+    padding:25px;
+    margin:25px 0;
+    color:white;
+    transition:0.3s;
+}
+
+.cert-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 15px #00e6e6;
+}
+
+.cert-card h2{
+    color:#00e6e6;
+    margin-bottom:10px;
+}
+
+.cert-card li{
+    margin:10px 0;
+}
+
+.cert-card a{
+    color:#00e6e6;
+    text-decoration:none;
+    margin-left:10px;
+}
+
+.cert-card a:hover{
+    text-decoration:underline;
+}
