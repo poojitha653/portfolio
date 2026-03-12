@@ -36,25 +36,25 @@
   <section id="skills">
     <h2>Skills</h2>
     <div class="skills-grid">
-      <div class="skill-card" onclick="toggleCert('pythonCerts')">
-        <h3>Python</h3>
-        <p>Proficient in writing scripts and building ML models.</p>
-        <div class="skill-bar"><div class="bar" style="width: 90%"></div></div>
-        <p class="percent">90%</p>
+      <div class="skill-card">
+          <h3>Python</h3>
+          <p>Proficient in writing scripts and building ML models.</p>
       
-        <!-- Certificates -->
-        <div id="pythonCerts" class="cert-list">
-          <ul>
-            <li>
-              Python for Data Science –
-              <a href="CERTIFICATE_LINK_HERE" target="_blank">View Certificate</a>
-            </li>
-            <li>
-              Machine Learning with Python –
-              <a href="CERTIFICATE_LINK_HERE" target="_blank">View Certificate</a>
-            </li>
-          </ul>
-        </div>
+          <div class="progress">
+              <div class="progress-bar" style="width:90%"></div>
+          </div>
+          <p>90%</p>
+      
+          <!-- Button -->
+          <button onclick="toggleCertificates()">View Certificates</button>
+      
+          <!-- Hidden certificate list -->
+          <div id="python-certificates" style="display:none;">
+              <ul>
+                  <li>Python for Data Science – <a href="#">View Certificate</a></li>
+                  <li>Machine Learning with Python – <a href="#">View Certificate</a></li>
+              </ul>
+          </div>
       </div>
 
       <div class="skill-card">
