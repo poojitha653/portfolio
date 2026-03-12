@@ -349,12 +349,11 @@ section {
 .resume-card {
   display: block;
   text-decoration: none;
-  background: #1b1b2f;          /* same dark background as your cards */
-  border: 2px solid #00e6e6;     /* cyan border like projects */
+  background: #1b1b2f;
+  border: 2px solid #00e6e6;
   border-radius: 15px;
   padding: 25px;
-  margin-top: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
 }
 
 .resume-card:hover {
