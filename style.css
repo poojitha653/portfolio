@@ -251,7 +251,7 @@ section {
 /* Project Card */
 .project-card {
   padding: 15px;
-  border: 2px solid #00cec9;
+  border: 2px solid #a29bfe;
   border-radius: 15px;
   margin-top: 10px;
   transition: transform 0.4s, box-shadow 0.4s;
@@ -259,16 +259,7 @@ section {
 .project-card:hover {
   transform: scale(1.03);
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  border: 2px solid #00cec9;
-  box-shadow: 0 0 20px 4px #00cec9;
 }
-
-.skill-card:hover,
-.tool-card:hover {
-  border: 2px solid #00cec9;
-  box-shadow: 0 0 20px 4px #00cec9;
-}
-
 /* Styling for project feature list */
 /* Styling for project feature list */
 .feature-list {
@@ -322,37 +313,4 @@ footer {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-section {
-  animation: fadeIn 0.8s ease forwards;
-}
-
-button {
-    background-color: #000000;
-    border: none;
-    padding: 6px 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 8px;
-}
-
-.certificates{
-    display:none;
-    margin-top:10px;
-    font-size:14px;
-}
-
-.certificates ul{
-    padding-left:15px;
-}
-
-.skill-card{
-    cursor:pointer;
 }
