@@ -30,8 +30,8 @@ header img.profile-img {
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  float: right;
-  margin: -30px 50px 10px -160px;
+  display:block;
+  margin:20px auto;
 }
 
 /* Navigation */
@@ -119,7 +119,7 @@ section {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* fixed 4 cards per row */
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
@@ -466,5 +466,60 @@ section {
         margin:auto;
         display:block;
     }
+
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 1024px){
+
+  .skills-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 768px){
+
+  body{
+    padding:10px;
+  }
+
+  /* Skills fix */
+  .skills-grid{
+    grid-template-columns: 1fr;
+    gap:20px;
+  }
+
+  .skill-card{
+    width:100%;
+  }
+
+  /* Profile Image Fix */
+  header img.profile-img{
+    float:none;
+    display:block;
+    margin:20px auto;
+    width:150px;
+    height:150px;
+  }
+
+  /* Certificates Page */
+  .cert-container{
+    width:95%;
+  }
+
+  .cert-card{
+    padding:20px;
+    margin:20px 0;
+  }
+
+  .cert-card h2{
+    font-size:20px;
+  }
+
+  .cert-card li{
+    font-size:14px;
+  }
 
 }
