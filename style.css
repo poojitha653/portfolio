@@ -450,12 +450,12 @@ section {
 
 @media (max-width: 768px){
 
-    .skills-container{
-        display:grid;
-        grid-template-columns:1fr;
-        gap:20px;
-        padding:10px;
-    }
+.skills-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
 
     .skill-card{
         width:100%;
