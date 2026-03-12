@@ -123,6 +123,11 @@ section {
   gap: 20px;
 }
 
+.skill-link{
+    text-decoration: none;
+    color: inherit;
+}
+
 #development-tools {
   background-color: #1e1e2f;
   color: #f1f1f1;
