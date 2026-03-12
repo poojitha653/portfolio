@@ -354,11 +354,14 @@ section {
   border-radius: 15px;
   padding: 25px;
   color: white;
+  transition: transform 0.4s, box-shadow 0.4s;
 }
 
-.resume-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 15px #00e6e6;
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  border: 2px solid #00cec9;
+  box-shadow: 0 0 20px 4px #00cec9;
 }
 
 #resume h2 {
