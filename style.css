@@ -338,3 +338,30 @@ footer {
 section {
   animation: fadeIn 0.8s ease forwards;
 }
+
+.resume-card {
+  display: block;
+  text-decoration: none;
+  background: #1c1c2e;
+  border: 2px solid #00ffff;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 500px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #00ffff;
+}
+
+.resume-content h3 {
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+
+.resume-content p {
+  color: #ccc;
+}
