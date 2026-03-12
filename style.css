@@ -339,29 +339,32 @@ section {
   animation: fadeIn 0.8s ease forwards;
 }
 
+#resume {
+  padding: 40px 20px;
+}
+
 .resume-card {
   display: block;
   text-decoration: none;
-  background: #1c1c2e;
-  border: 2px solid #00ffff;
-  border-radius: 12px;
-  padding: 30px;
-  margin: 20px auto;
-  max-width: 500px;
-  text-align: center;
+  background: #1b1b2f;          /* same dark background as your cards */
+  border: 2px solid #00e6e6;     /* cyan border like projects */
+  border-radius: 15px;
+  padding: 25px;
+  margin-top: 20px;
+  color: #ffffff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .resume-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 20px #00ffff;
+  box-shadow: 0 0 15px #00e6e6;
 }
 
-.resume-content h3 {
-  color: #00ffff;
+.resume-card h3 {
+  color: #00e6e6;
   margin-bottom: 10px;
 }
 
-.resume-content p {
-  color: #ccc;
+.resume-card p {
+  color: #d1d1d1;
 }
