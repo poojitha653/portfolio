@@ -36,7 +36,7 @@
   <section id="skills">
     <h2>Skills</h2>
     <div class="skills-grid">
-      <div class="skill-card">
+      <div class="skill-card" onclick="toggleCertificates('python-cert')">
           <h3>Python</h3>
           <p>Proficient in writing scripts and building ML models.</p>
       
@@ -45,11 +45,8 @@
           </div>
           <p>90%</p>
       
-          <!-- Button -->
-          <button onclick="toggleCertificates()">View Certificates</button>
-      
           <!-- Hidden certificate list -->
-          <div id="python-certificates" style="display:none;">
+          <div class="certificates" id="python-cert">
               <ul>
                   <li>Python for Data Science – <a href="#">View Certificate</a></li>
                   <li>Machine Learning with Python – <a href="#">View Certificate</a></li>
