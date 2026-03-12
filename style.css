@@ -333,3 +333,12 @@ footer {
 section {
   animation: fadeIn 0.8s ease forwards;
 }
+
+button {
+    background-color: #00e6c3;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 8px;
+}
