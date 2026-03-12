@@ -60,12 +60,13 @@ if (skillsSection) {
   observer.observe(skillsSection);
 }
 
-function toggleCertificates() {
-    let cert = document.getElementById("python-certificates");
+function toggleCertificates(id) {
+    const cert = document.getElementById(id);
 
-    if (cert.style.display === "none") {
-        cert.style.display = "block";
-    } else {
+    if (cert.style.display === "block") {
         cert.style.display = "none";
+    } else {
+        cert.style.display = "block";
     }
 }
+
